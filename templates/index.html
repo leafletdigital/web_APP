@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LEAFLET</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/assets/img/Logo.png" rel="icon">
+  <link href="/static/assets/img/Logo.png" rel="apple-touch-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="/static/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+91 00000 00000</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span>  24*7 For You</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center"><!---
+        <ul>
+          <li>En</li>
+          <li><a href="#">De</a></li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0">
+        <a href="index.html">
+          <img src="/static/assets/img/Logo.png" alt="" style="width: 200px; height: auto;">
+        </a>
+      </h1>
+      
+      
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Solutions</a></li>
+          <li><a class="nav-link scrollto" href="#events">Events</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#chefs">Team</a></li>
+          
+          
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="#contact" class="book-a-table-btn scrollto d-none d-lg-flex">Contact Us</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>LEAFLET.digital</span></h1>
+          <h2>Cultivating happiness, powered by AI</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Servises</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Chat / Ask ?</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="/static/assets/img/about-bg.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Brief about the Idea:</h3>
+            <p class="fst-italic">
+              We develop a versatile virtual personal assistant for all a user needs for crop growth or wastage prevention as per soil 
+fertility, insecticides, pesticides, fertilizers, local market rates, weather(especially rain) information including water level info, 
+location, geography, source and mode of irrigation, thus saving time, money and efforts.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Identify the problem: Recognize the problem using image recognition and information given by users, then suggesting 
+                solutions based on them, asking the right questions based on images, thus providing better suggestions and production 
+                efficiency, to be available 24*7.</li>
+              <li><i class="bi bi-check-circle"></i> Timely suggestion for crop growth or wastage prevention: Reviewing images uploaded by users and identifying 
+                issues or suggesting solutions based on them, Asks the right questions based on images, thus improving recognition and 
+                production efficiency </li>
+              <li><i class="bi bi-check-circle"></i> AI Technology + Traditional methods: Inspite of relying on only traditional methods, we can use AI high accuracy 
+                technology in combination with traditional agricultural methods to grow niche nutritious crops, plants, trees. </li>
+            </ul>
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Values</h2>
+          <p>Fortifying Our Foundation | Realizing Our Actual Mission | Developing Our Motivation 
+          </p>
+        </div>
+
+        <div class="row">
+        {% for i in values_data%}
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>{{i.values_No}}</span>
+              <h4>{{i.values_title}}</h4>
+              <p>{{i.values_desc}}</p>
+            </div>
+          </div>
+        {% endfor %}
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Produtcs</h2>
+          <p>We Offer</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-innovative">Innovative</li>
+              <li data-filter=".filter-prepration">Prepration</li>
+              <li data-filter=".filter-sowing">Sowing</li>
+              <li data-filter=".filter-fertilizers">Fertilizers</li>
+              <li data-filter=".filter-irrigation">Irrigation</li>
+              <li data-filter=".filter-harvesting">Harvesting</li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        {% for i in products_data%}
+          <div class="col-lg-6 menu-item filter-innovative">
+            <img src={{i.product_img}} class="menu-img" alt="">
+            <div class="menu-content">
+              <a href={{i.product_link}}>{{i.product_title}}</a><span>Rs.{{i.product_cost}}</span>
+            </div>
+            <div class="menu-ingredients">{{i.product_feature}}
+            </div>
+          </div>
+        {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Solutions</h2>
+          <p>List of Features offered by the solution</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Advisories and Reminders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">AI + Traditional</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">One Stop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Image Recognition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">E-commerce</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Own your chatbot</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Selective crop advisories and reminders :</h3>
+                    <p class="fst-italic">Provides maximum possible growth and suggestions for personal care of 
+crops/plants/trees/vegetation and friendly reminders of watering. Personalized consultancy derived from real-time and up-to-date information, available on demand 24*7.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="/static/assets/img/Screenshot 2024-03-21 132310.png" alt="" class="img-fluid rounded-circle">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>AI Technology + Traditional methods:</h3>
+                    <p class="fst-italic"> Our intention is to use AI high accuracy technology in combination with traditional 
+                      agricultural methods to grow niche nutritious crops, plants, trees.</div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                        <img src="/static/assets/img/AI-in-Agriculture-768x768.jpg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                      
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>One Stop personalised solution:</h3>
+                    <p class="fst-italic"> All-inclusive agriculture, horticulture, and plantation platform providing a range of 
+                      services, soil fertility, insecticides, pesticides, fertilizers, local market rates, weather(especially rain) information including 
+                      water level info, location, geography, source and mode of irrigation.</div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="/static/assets/img/4880532132-smartag-1000x536.jpg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Image Recognition:</h3>
+                    <p class="fst-italic">Reviewing images uploaded by users and identifying issues or suggesting solutions based on them, 
+                      Asks the right questions based on images, thus improving recognition and production efficiency using AI.</div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="/static/assets/img/maxresdefault.jpg" alt="" class="img-fluid rounded-circle">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>E-commerce marketplaces: </h3>
+                    <p class="fst-italic">We provide product websites links and contacts for the required items like fertilizers, 
+                      pesticides, insecticides, seeds, farming/gardening equipment etc.</div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="/static/assets/img/Screenshot 2024-03-21 134515.png" alt="" class="img-fluid rounded-circle">
+                  </div>
+                </div>
+              </div>
+                <div class="tab-pane" id="tab-6">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Preferred language and name </h3>
+                      <p class="fst-italic">Can be customised to talk and chat in regional languages and renaming of chatbot name 
+                        as per the users’ preference.</div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="/static/assets/img/Languages-of-India-List-of-Official-Languages-in-India..jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                  </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Uniting: Our Strategy for Attending Events</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+          {% for i in events_data%}
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src={{i.event_img}} class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>{{i.event_title}}</h3>
+                  <div class="price">
+                    <p><span>Moto: {{i.event_moto}}</span></p>
+                  </div>
+                  <p class="fst-italic">{{i.event_desc}}
+                    
+                  </p>
+                  
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+          {% endfor %}
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+    
+        <div class="section-title">
+          <h2>Feedback</h2>
+          <p>"Illuminate the path to enhancement: Let's explore the horizon of possibilities together!"</p>
+        </div>
+    
+        <form action="{% url 'feedback'%}" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Feedback</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+    
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+          {% for i in testimonilas_data %}
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  {{i.testimonila_title}}
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          {% endfor %}
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos from our USERS and our CONTRIBUTORS</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+        {%for i in gallerys_data %}
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href=# class="gallery-lightbox" data-gall="gallery-item">
+                <img src={{i.gallery_img}} alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Our Team</p>
+        </div>
+
+        <div class="row">
+        {% for i in teams_data %}
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <a href={{i.team_link}} class="gallery-lightbox" data-gall="gallery-item">
+              <img src={{i.team_img}} class="img-fluid" alt="">
+              </a>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>{{i.member_name}}</h4>
+                  <span>Co-Founder</span>
+                </div>
+                <div class="social">
+                  <a href={{i.member_twitter}}><i class="bi bi-twitter"></i></a>
+                  <a href={{i.member_facebook}}><i class="bi bi-facebook"></i></a>
+                  <a href={{i.member_instagram}}><i class="bi bi-instagram"></i></a>
+                  <a href={{i.member_linkedin}}><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.907591037638!2d85.1235253149801!3d25.612677517412857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f472ebe4b8ee87%3A0x4d99c11abbcce7d6!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1648103272632!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+      </div>
+      
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Patna,Bihar,India</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  11:00 AM - 23:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>mehatrahul0308@leaflet.digital</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 00000 00000</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="{% url 'contact' %}" method="post" role="form" class="php-email-form">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="contact_name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="contact_email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="contact_subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="contact_message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>LEAFLET.digital</h3>
+              <p>
+                Patna, Bihar <br>
+                India<br><br>
+                <strong>Phone:</strong>+91 00000 00000<br>
+                <strong>Email:</strong> mehatrahul0308@leaflet.digital<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/Leaflet_admin/">Admin Login</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">AI Soluitons</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Connect with us to explor more</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LEAFLET.digital</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
