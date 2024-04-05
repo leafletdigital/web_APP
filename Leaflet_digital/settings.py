@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-rw0ewfu0*hhg0!pr*%=m-!m0#5as%i(k^ot0gcslrbs83dw*8g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["34.29.5.83", "www.leaflet.digital"]
-
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Values','Products','Innovations','Events','Testimonials','Gallery','Team','Feedback','Contact',
+    'Values','Products','Innovations','Events','Testimonials','Gallery','Team','Feedback','Contact','gemini',
 ]
 
 MIDDLEWARE = [

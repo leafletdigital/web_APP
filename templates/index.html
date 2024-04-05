@@ -27,7 +27,16 @@
 
   <!-- Template Main CSS File -->
   <link href="/static/assets/css/style.css" rel="stylesheet">
-
+  <style>
+    /* Add this CSS for transparent background */
+    #chatbot-section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  </style>
   <!-- =======================================================
   * Template Name: Restaurantly
   * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
@@ -62,7 +71,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0">
-        <a href="index.html">
+        <a href="">
           <img src="/static/assets/img/Logo.png" alt="" style="width: 200px; height: auto;">
         </a>
       </h1>
@@ -93,24 +102,215 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8">
+      <div class="row" id="text-content">
+        <div class="col-lg-8" >
           <h1>Welcome to <span>LEAFLET.digital</span></h1>
           <h2>Cultivating happiness, powered by AI</h2>
-
-          <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Servises</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Chat / Ask ?</a>
+          <div class="btns" id="get-started-btn">
+            <a class="btn-book animated fadeInUp scrollto">Chat / Ask ?</a>
           </div>
         </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+        <div  class="col-lg-4 d-flex align-items-center justify-content-center position-relative" id="youtube" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=581Kx8wzTMc" class="glightbox play-btn"></a>
         </div>
-
       </div>
     </div>
-  </section><!-- End Hero -->
+  
+    <div id="chatbot-section" class="col-lg-6 order-1 order-lg-2" style="display: none;">
+      <div class="col-lg-8" >
+        <h1 style="white-space: nowrap;">Namaste...  <span style="font-size: 25px;">How Can I Help You Today?</span> </h1>
+        
+        
+      </div>
+      <div class="card" style="border: none; background-color: rgba(255, 255, 255, 0.7);">
+        <div class="card-header">
+          <div class="wrapper">
+            
+            <div class="px-2 scroll" style="color: #00000; height: 300px; overflow-y: auto;" id="chat-messages">
+              <div class="main">
+                <!--<div class="message received">
+                  
+                  <div class="message-content">
+                      
+                    <p class="msg"><span class="name" style="color: white;">AI... </span>{{ chatbot_text }}</p>
+                  </div>
+                </div>-->
+                
+                
+                <div class="message sent">
+                  <div class="message-content">
+                  </div>
+                  
+                </div>
+                <!-- Chat messages go here -->
+                <!-- Chat messages go here -->
+<!--<div class="message received">
+  <div class="message-content">
+      <p class="msg"><span class="name" style="color: white;">AI... </span>{{ chatbot_text }}</p>
+  </div>
+</div>-->
 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Include Font Awesome CSS -->
+<!-- Include Font Awesome CSS -->
+<!-- Include Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Form with buttons containing icons -->
+<div id="chat_bot" style="display: block;">
+  <form id="chat-form" method="post" class="d-flex" enctype="multipart/form-data">
+    {% csrf_token %}
+  <div style="position: relative; bottom: -20px; left: 50%; transform: translateX(-50%); width: 90%;height:80%">
+    
+      <div class="input-group mb-3">
+        <input id="chat-input" name="chatbot_text" class="form-control me-2 form-input" type="text" placeholder="Type your message..." aria-label="Type your message..." oninput="enableSendButton()" style="border-radius: 20px 0 0 20px; height: 40px;">
+        <div class="input-group-append">
+          <label for="chatbot_image" class="btn btn-outline-primary btn-custom" style="border-radius: 10px 0 0 10px; height: 40px; background-color: white; color: black;"><i class="fas fa-image" style="color: black; margin-right: 20px; position: relative; top: 3px;"></i></label>
+          <input type="file" id="chatbot_image" name="chatbot_image" style="display: none;">
+          <button id="send-btn" class="btn btn-outline-primary btn-custom" type="submit" style="border-radius: 0 10px 10px 0; height: 40px; background-color: white; color: black;" disabled><i class="fas fa-paper-plane" style="color: black; margin-right: 20px; position: relative; top: 2px;"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+      
+      <script>
+        function enableSendButton() {
+          var inputText = document.getElementById('chat-input').value.trim();
+          var sendButton = document.getElementById('send-btn');
+          if (inputText !== '') {
+            sendButton.disabled = false;
+          } else {
+            sendButton.disabled = true;
+          }
+        }
+      </script>
+      
+      
+      
+      <style>
+        .btn-custom {
+          height: 55px;
+        }
+      
+        .btn-custom i {
+          padding-left: 20px;
+        }
+      </style>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  
+    
+  </section>
+  <script>
+    document.getElementById('chat-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      var userInput = document.getElementById('chat-input').value; // Get user input
+      var chatMessages = document.getElementById('chat-messages');
+      var messageSentDiv = document.createElement('div');
+      messageSentDiv.className = 'message sent';
+      var messageContentDiv = document.createElement('div');
+      messageContentDiv.className = 'message-content';
+      var messageParagraph = document.createElement('p');
+      messageParagraph.className = 'msg';
+      messageParagraph.innerHTML = '<span class="name" style="color: white;">YOU... </span>' + userInput;
+      messageContentDiv.appendChild(messageParagraph);
+      messageSentDiv.appendChild(messageContentDiv);
+      chatMessages.appendChild(messageSentDiv);
+      document.getElementById('chat-input').value = ''; // Clear input field
+      scrollToBottom(); // Scroll to bottom after adding the message
+      
+      // Send user input to the server
+      var formData = new FormData(); // Create FormData object
+      formData.append('chatbot_text', userInput); // Append form data
+      fetch('', {
+          method: 'POST',
+          headers: {
+              'X-CSRFToken': '{{ csrf_token }}' // Ensure to include the CSRF token
+          },
+          body: formData // Send form data
+      })
+      .then(response => response.json())
+      .then(data => {
+          // Handle response from the server
+          console.log(data);
+          var messageReceivedDiv = document.createElement('div');
+          messageReceivedDiv.className = 'message received';
+          var receivedContentDiv = document.createElement('div');
+          receivedContentDiv.className = 'message-content';
+          var receivedParagraph = document.createElement('p');
+          receivedParagraph.className = 'msg';
+          receivedParagraph.innerHTML = '<span class="name" style="color: white;">AI... </span>' + data.chatbot_text;
+          receivedContentDiv.appendChild(receivedParagraph);
+          messageReceivedDiv.appendChild(receivedContentDiv);
+          chatMessages.appendChild(messageReceivedDiv);
+          scrollToBottom();
+      })
+      .catch(error => {
+          console.error('Error:', error);
+      });
+  });
+  
+  // Function to scroll to the bottom of the chatbox
+  function scrollToBottom() {
+      var chatMessages = document.getElementById('chat-messages');
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+  
+  // Call scrollToBottom function when the page loads
+  window.onload = scrollToBottom;</script>
+  
+
+  <script>
+    // JavaScript to toggle visibility of text content and chatbox section
+    document.getElementById('get-started-btn').addEventListener('click', function() {
+      var textContent = document.getElementById('text-content');
+      var chatbotSection = document.getElementById('chatbot-section');
+      //var youtube =document.getElementById("youtube" )
+      //var button = document.getElementById("get-started-btn");
+      var chat_bot = document.getElementById("chat_bot");
+      if (textContent.style.display !== 'none') {
+        textContent.style.display = 'none';
+        //button.style.display = "none";
+        //youtube.style.display="none"
+        chat_bot.style.display = "block";
+        chatbotSection.style.display = 'block';
+        // Call scrollToBottom function when the chatbot section is displayed
+        scrollToBottom();
+      }
+    });
+  
+    // Function to scroll to the bottom of the chatbox
+    function scrollToBottom() {
+      var chatMessages = document.getElementById('chat-messages');
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+  
+    // Call scrollToBottom function when the page loads and when new messages are added
+    window.onload = scrollToBottom;
+    document.getElementById('chat-messages').addEventListener('DOMSubtreeModified', scrollToBottom);
+  </script>
+  
+  
+  
+  </section><!-- End Hero -->
+ 
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -613,7 +813,7 @@ crops/plants/trees/vegetation and friendly reminders of watering. Personalized c
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-github"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
