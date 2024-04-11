@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     'www.leaflet.digital',
     '0.0.0.0',
     '34.29.5.83',
+    'LEAFLET.digital',
 ]
 
 
